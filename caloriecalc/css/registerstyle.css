@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+    background-repeat: no-repeat;
+}
+
+#registerForm img {
+    height: 80px;
+}
+
+.container {
+    text-align: center;  
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.container h1 {
+    color: #eee;
+}
+
+form {
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto 20px auto;
+    border: 1px solid #eee;
+    padding: 50px;
+    border-radius: 8px;
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+form input {
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #4b6472;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #eee;
+}
+
+.regbut {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer; /* Changed to pointer for better UX */
+    transition: background-color 0.7s ease;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.regbut:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+.login-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #eee;
+    display: inline-block; 
+    margin-bottom: 20px;   
+    transition: background-color 0.7s ease; 
+ 
+    cursor: default;
+}
+
+.login-button:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+
+
+.terms-button {
+    text-decoration: none;
+    color: #f1683a;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+@media (max-width: 1600px) {
+    h1{
+        font-size:1.3em;
+    }
+    form {
+        max-width: 90%; 
+        padding-top: 10px;
+        padding-left: 18em; 
+        padding-right: 18em;
+        padding-bottom: 0em!important;
+        height: 43em;
+    }
+    form input{
+        padding: 0.7em;
+    }
+    .regbut{
+       padding: 0.6em;
+    }
+    .login-button{
+        padding: 0.4em;
+    }
+    
+}
+
+@media (max-width: 1024px) { 
+    form {
+        padding: 40px; 
+    }
+    .regbut, .login-button {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 768px) { 
+    form {
+        max-width: 90%; 
+        padding: 30px; 
+    }
+    .regbut, .login-button {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) { 
+    body {
+        padding: 10px; 
+    }
+    form {
+        padding: 20px; 
+    }
+    .regbut, .login-button {
+        font-size: 14px; 
+    }
+    #registerForm img {
+        height: 60px;
+    }
+}

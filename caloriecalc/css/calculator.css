@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* toggle */
+.navbar-toggler:hover{
+    cursor: default;
+    background-color: rgba(102, 99, 99, 0.63);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 40px;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+.navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+    filter: blur(20px);
+    opacity: 0;
+    cursor: default;
+   animation: showContent .5s .3s linear 1 forwards; 
+   
+}
+.dropdown-menu {
+    
+    color: #ffffff; 
+    background-color: rgba(102, 99, 99, 0.63); 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+.dropdown-item.active {
+    background-color: transparent;
+    }
+    
+    .dropdown-item{
+        background: transparent;
+    }
+    
+    .dropdown-item:hover{
+        color: #000; 
+        background-color: #eee; 
+        border-radius: 5px;
+        transition: 0.5s;
+        
+    }
+/* Sidebar */
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+}
+/* Styling for the profile picture and username */
+.offcanvas-body .text-center img {
+    border: 2px solid #f1683a;
+    padding: 5px;
+}
+
+.offcanvas-body .text-center h5 {
+    margin-top: 10px;
+}
+
+.hi{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px; 
+    margin-top: auto; 
+    cursor: default;
+}
+.hi:hover{
+    background-color: #eee;
+    color: #000;
+    transition: 0.5s;
+}
+
+.hi .nav-link{
+    cursor: default;
+}
+/* Hero Section */
+#hero .col-6 {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+#hero .col-12 {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* Calculator */
+.calorie-calculator {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    flex-wrap: wrap; /* To allow stacking */
+}
+
+.form-container,
+.result-container {
+    width: 45%;
+}
+
+.card {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calculator-table,
+.result-table {
+    flex: 1;
+    margin: 10px;
+    border-collapse: collapse;
+    border: 1px solid #46545c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calculator-table td,
+.result-table td {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-table td:hover,
+.result-table td:hover {
+    background-color: #074e533d;
+    color: #074e533d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #eee;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #46545c;
+}
+
+/* Buttons */
+.btn {
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent 1s .3s linear 1 forwards;
+}
+
+.btn:hover{
+    background-color: #eee;
+    color: #000000;
+    cursor: default;
+}
+
+.result {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.percentage,
+.info {
+    font-size: 14px;
+    color: #bebebe;
+    text-align: right;
+}
+
+/* Media Queries */
+@media(max-width: 991px) {
+    .form-container, .result-container {
+        width: 100%; /* Stack form and result */
+    }
+
+    #hero .col-6, #hero .col-12 {
+        width: 100%; /* Make the hero columns full-width */
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    #hero .hero-img {
+        max-width: 80%; /* Smaller max width */
+        transform: none; /* No rotation on small screens */
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        margin-top: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 30px; /* Smaller navbar font */
+    }
+}

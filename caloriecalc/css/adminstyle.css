@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+}
+/* toggle */
+.navbar-toggler:hover{
+    cursor: default;
+    background-color: rgba(102, 99, 99, 0.63);
+}
+
+/* Navbar */
+.navbar{
+    margin-top: 60px;
+}
+.navbar-brand {
+    font-size: 40px;
+ 
+}
+
+.navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+    
+   
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+}
+.hi{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px; 
+    margin-top: auto; 
+    cursor: default;
+}
+.hi:hover{
+    background-color: #eee!important;
+    color: #000;
+    transition: 0.5s;
+}
+.nav-link{
+    background-color: transparent!important;
+}
+
+
+
+/* Center the main title */
+h1 {
+    color: #eee;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+/* Styling the table */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+table, th, td {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    color: #eee;
+}
+
+th {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    font-size: 16px;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Links within the table */
+.action-button {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: default;
+    
+}
+
+a:hover {
+    background-color: #eee;
+    color: #000;
+    
+  
+}
+
+/* Edit user form */
+#editUserForm {
+    display: none;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(34, 31, 31, 0.788); 
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+     z-index: 1;
+
+}
+
+#editUserForm h2 {
+    margin: 0 0 15px;
+    color: #eee;
+}
+
+#editUserForm label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+#editUserForm input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#editUserForm button {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    cursor: default;
+}
+
+#editUserForm button:hover {
+    background-color: #eee;
+    color: #000;
+    
+}
+
+/* Logout button styling */
+.logout-btn {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    padding: 12px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid white;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+.logout-btn:hover {
+    background-color: #eee;
+    color: #000;
+    transition: 0.5s;
+}
+
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

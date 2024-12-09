@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Ensures the background covers the full height */
+}
+
+/* toggle */
+.navbar-toggler:hover {
+    cursor: default;
+    background-color: rgba(102, 99, 99, 0.63);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 40px; 
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+
+.navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+    filter: blur(20px);
+    opacity: 0;
+   animation: showContent .5s .3s linear 1 forwards;
+}
+/* Styling for the profile picture and username */
+.offcanvas-body .text-center img {
+    border: 2px solid #f1683a;
+    padding: 5px;
+}
+
+.offcanvas-body .text-center h5 {
+    margin-top: 10px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+}
+.dropdown-menu {
+    
+    color: #ffffff !important; 
+    background-color: rgba(102, 99, 99, 0.63)!important; 
+    padding: 10px!important; 
+    border-radius: 5px!important; 
+}
+
+    .dropdown-item{
+        background: transparent;
+    }
+    
+    .dropdown-item:hover{
+        color: #000; 
+        background-color: #eee; 
+        border-radius: 5px;
+        transition: 0.5s;
+        
+    }
+
+    .hi{
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px; 
+        margin-top: auto; 
+        cursor: default;
+    }
+    .hi:hover{
+        background-color: #eee;
+        color: #000;
+        transition: 0.5s;
+    }
+    
+    .hi .nav-link{
+        cursor: default;
+    }
+/* Card styling */
+.container .card {
+    display: block;
+    width: 70%; 
+    height: auto; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+    filter: blur(20px);
+     opacity: 0;
+    animation: showContent .5s .3s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* Profile picture container */
+.profile-picture-container {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+#profileForm .form-label {
+    color: #eee;
+}
+
+#profileForm .btn {
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+
+#profileForm .btn:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #000;
+    cursor: default;
+}
+
+.btn-seamless {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .container .card {
+        width: 90%; /* Make card full width on smaller screens */
+    }
+
+    .sidebar {
+        font-size: 18px; /* Slightly reduce sidebar font size */
+    }
+
+    /* Adjust button size for smaller screens */
+    #profileForm .btn {
+        padding: 10px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    .container .card {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    .sidebar {
+        font-size: 16px; /* Further reduce sidebar font size */
+    }
+
+    /* Adjust button size for very small screens */
+    #profileForm .btn {
+        padding: 8px; 
+        font-size: 12px;
+    }
+}

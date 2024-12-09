@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; 
+}
+html, body {
+   
+    overflow: hidden; 
+}
+
+.btn{
+    background-color: transparent;
+    transition: 0.5s;
+    border: white 1px solid;
+}
+.btn:hover{
+    background-color: white;
+    color: #000000;
+    cursor: default;
+}
+
+#forgotPasswordForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.modal-header {
+    background-color: #5a5858f1;
+    justify-content: space-between;
+}
+
+.modal-body {
+    background-color: #5a5858f1;
+    border-radius: 0 0 0 0px;
+}
+
+.modal-body .form-group {
+    color: #eee;
+    font-family: Poppins;
+    font-weight: normal;
+}
+
+.modal-body .form-control {
+    color: #000;
+    font-family: Poppins;
+    font-weight: normal;
+    border: 1px solid #5a5858f1;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    background-color:#5a5858f1;
+ 
+}
+
+.modal-footer .btn:hover {
+    background-color: #eee;
+    color: #000000;
+    border: 1px solid #eee;
+    cursor: default;
+}
+
+.modal-header .close {
+    background-color: transparent;
+    border: 1px solid #eee;
+    cursor: default;
+    border-radius: 5px;
+    color: #eee;
+}
+
+.modal-header .close:hover {
+    background-color: #eee;
+    border: 1px solid #000;
+    cursor: default;
+    transition: background-color 0.5s ease;
+    color: #000;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+
+    body {
+        padding: 30px;
+    }
+    
+    .form {
+        padding: 30px;
+        max-width: 50%;
+    }
+
+    .button3 {
+        left: 2em;
+        font-size: 35px;
+        
+    }
+    form input{
+        width: 70%;
+        justify-self: center;
+    }
+    .button1{
+        padding: 10px 10px;
+    }
+    img{
+        height: 10em;
+    }
+    .register-button{
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .form {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    form input {
+        padding: 10px;
+    }
+
+    .button3 {
+        top: 20px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    .button1 {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 523px) {
+    body {
+        padding: 20px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    form input {
+        padding: 8px;
+    }
+
+    .button3 {
+        top: 15px;
+        left: 15px;
+        font-size: 25px;
+    }
+
+    .button1 {
+        font-size: 11px;
+        padding: 10px;
+    }
+    .register-button{
+        font-size: 12px;
+    }
+}
